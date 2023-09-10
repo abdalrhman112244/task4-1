@@ -2,17 +2,17 @@ var numbers = [];
 for(var i = 0; i<10 ; i++){
     numbers.push(Math.floor(Math.random()*10));
 }
-var evenSum = 0;
-var lessThanFiveSum = 0;
+var Sum1 = 0;
+var Sum2 = 0;
 for(var j = 0;j<numbers.length;j++ ){
     if (numbers[j]%2 === 0){
-        evenSum += numbers[j];
+        Sum1 += numbers[j];
 }
 if (numbers[j]<5){
-    lessThanFiveSum+=numbers[j];
+    Sum2+=numbers[j];
 }
 }
-console.log(evenSum);
-console.log(lessThanFiveSum);
-document.writeln(evenSum);
-document.writeln(lessThanFiveSum);
+console.log(Sum1);
+console.log(Sum2);
+document.writeln(Sum1);
+document.writeln(Sum2);
